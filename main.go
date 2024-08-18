@@ -5,35 +5,16 @@ import (
 	"image"
 	"image/color"
 	"log"
+	"rpg-tutorial/entities"
 
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/hajimehoshi/ebiten/v2/ebitenutil"
 )
 
-type Sprite struct {
-	Image *ebiten.Image
-	X, Y  float64
-}
-
-type Player struct {
-	*Sprite
-	Health uint
-}
-
-type Enemy struct {
-	*Sprite
-	FollowsPlayer bool
-}
-
-type Potion struct {
-	*Sprite
-	AmountHeal uint
-}
-
 type Game struct {
-	player       *Player
-	enemies      []*Enemy
-	potions      []*Potion
+	player       *entities.Player
+	enemies      []*entities.Enemy
+	potions      []*entities.Potion
 	tilemapJSON  *TilemapJSON
 	tilemapImage *ebiten.Image
 }
@@ -182,40 +163,40 @@ func main() {
 	}
 
 	game := Game{
-		player: &Player{
-			&Sprite{
+		player: &entities.Player{
+			Sprite: &entities.Sprite{
 				Image: playerImage,
 				X:     50.0,
 				Y:     50.0,
 			},
-			10,
+			Health: 10,
 		},
-		enemies: []*Enemy{
+		enemies: []*entities.Enemy{
 			{
-				&Sprite{
+				Sprite: &entities.Sprite{
 					Image: skeletonImage,
 					X:     100.0,
 					Y:     100.0,
 				},
-				false,
+				FollowsPlayer: false,
 			},
 			{
-				&Sprite{
+				Sprite: &entities.Sprite{
 					Image: skeletonImage,
 					X:     150.0,
 					Y:     100.0,
 				},
-				true,
+				FollowsPlayer: true,
 			},
 		},
-		potions: []*Potion{
+		potions: []*entities.Potion{
 			{
-				&Sprite{
+				Sprite: &entities.Sprite{
 					Image: potionImage,
 					X:     250,
 					Y:     90,
 				},
-				1,
+				AmountHeal: 1,
 			},
 		},
 		tilemapJSON:  tilemapJSON,
