@@ -19,11 +19,15 @@
             }
         },
         "tilesets/TilesetFloor.tsx": {
+            "dynamicWrapping": false,
             "scaleInDock": 4.2567,
             "scaleInEditor": 1
+        },
+        "tilesets/buildings.json": {
+            "dynamicWrapping": true
         }
     },
-    "last.imagePath": "/Users/kenson/Downloads/game_assets/Ninja Adventure - Asset Pack/Backgrounds/Tilesets",
+    "last.imagePath": "/Users/kenson/Developer/repos/games-in-go/rpg-tutorial/assets/images/buildings",
     "map.height": 80,
     "map.lastUsedFormat": "json",
     "map.tileHeight": 16,
@@ -38,9 +42,10 @@
         "tilesets/TilesetFloor.tsx",
         "spawn.json"
     ],
-    "tileset.lastUsedFormat": "tsx",
+    "tileset.lastUsedFormat": "json",
     "tileset.tileSize": {
         "height": 16,
         "width": 16
-    }
+    },
+    "tileset.type": 1
 }
