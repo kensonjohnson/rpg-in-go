@@ -1,46 +1,17 @@
 {
-    "Map/SizeTest": {
-        "height": 4300,
-        "width": 2
-    },
-    "activeFile": "spawn.json",
+    "activeFile": "",
     "expandedProjectPaths": [
-        "tilesets",
-        "."
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
-        "spawn.json": {
-            "scale": 2.19,
-            "selectedLayer": 0,
-            "viewCenter": {
-                "x": 266.21004566210047,
-                "y": 223.28767123287676
-            }
-        },
-        "tilesets/TilesetFloor.tsx": {
-            "scaleInDock": 4.2567,
-            "scaleInEditor": 1
+        "tilesets/buildings.json": {
+            "dynamicWrapping": true
         }
     },
-    "last.imagePath": "/Users/kenson/Downloads/game_assets/Ninja Adventure - Asset Pack/Backgrounds/Tilesets",
-    "map.height": 80,
-    "map.lastUsedFormat": "json",
-    "map.tileHeight": 16,
-    "map.tileWidth": 16,
-    "map.width": 100,
+    "last.imagePath": "/Users/kenson/Developer/repos/games-in-go/rpg-tutorial/assets/images/buildings",
     "openFiles": [
-        "tilesets/TilesetFloor.tsx",
-        "spawn.json"
     ],
     "project": "rpg.tiled-project",
     "recentFiles": [
-        "tilesets/TilesetFloor.tsx",
-        "spawn.json"
-    ],
-    "tileset.lastUsedFormat": "tsx",
-    "tileset.tileSize": {
-        "height": 16,
-        "width": 16
-    }
+    ]
 }
