@@ -8,7 +8,7 @@
  "margin":0,
  "name":"buildings",
  "spacing":0,
- "tilecount":3,
+ "tilecount":4,
  "tiledversion":"1.11.0",
  "tileheight":48,
  "tiles":[
@@ -29,6 +29,12 @@
          "image":"..\/..\/images\/buildings\/building3.png",
          "imageheight":48,
          "imagewidth":48
+        }, 
+        {
+         "id":3,
+         "image":"..\/..\/images\/buildings\/knight.png",
+         "imageheight":32,
+         "imagewidth":32
         }],
  "tilewidth":64,
  "type":"tileset",
